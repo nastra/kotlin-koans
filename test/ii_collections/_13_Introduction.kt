@@ -9,4 +9,9 @@ class _13_Introduction {
     @Test fun testSetOfCustomers() {
         assertEquals(customers.values.toSet(), shop.getSetOfCustomers())
     }
+
+    @Test
+    fun getCustomerNames() {
+        assertEquals(customers.keys.toList().sorted(), shop.getCustomerNames().sorted())
+    }
 }

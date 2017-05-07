@@ -1,6 +1,7 @@
 package ii_collections
 
 import java.util.*
+import java.util.stream.Collectors
 
 /*
  * This part of workshop was inspired by:
@@ -17,8 +18,10 @@ fun example0(list: List<Int>) {
 }
 
 fun Shop.getSetOfCustomers(): Set<Customer> {
-    // Return a set containing all the customers of this shop
-    todoCollectionTask()
-//    return this.customers
+    return this.customers.toSet();
+}
+
+fun Shop.getCustomerNames(): List<String> {
+    return this.customers.stream().map { c -> c.name }.collect(Collectors.toList())
 }
 

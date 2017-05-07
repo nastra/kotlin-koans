@@ -4,7 +4,8 @@ import org.junit.Assert.assertEquals
 import org.junit.Test
 
 class _08_Smart_Casts {
-    @Test fun testNum() {
+    @Test
+    fun testNum() {
         assertEquals("'eval' on Num should work:", 2, eval(Num(2)))
     }
 

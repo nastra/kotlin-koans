@@ -13,6 +13,6 @@ class _14_Filter_Map {
      * Returns the list of the customers who live in the city 'city'
      */
     @Test fun testCustomersFromCity() {
-        assertEquals(listOf(customers[lucas], customers[cooper]), shop.getCustomersFrom(Canberra))
+        assertEquals(listOf(customers[lucas], customers[cooper]), shop.getCustomersFromCity(Canberra))
     }
 }
